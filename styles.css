@@ -1,0 +1,236 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(58, 57, 57);
+    position: relative;
+    font-family: sans-serif;
+}
+
+.converter-body
+{
+    color: white;
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left: 40%;
+}
+
+/*Dugme za Dropdown*/
+button:focus	
+{
+    outline: none;
+}
+.dropBTN
+{
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 10px;
+}
+.dropBTN:hover, .dropBTN:focus 
+{
+    background-color: #2980B9;
+}
+
+/*Dropdown*/
+.converter-dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*Dugme za odabir Tezine*/
+.WeightBTN
+{
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:left;
+}
+.WeightBTN:hover
+{
+    background-color: #ddd;
+}
+
+/*Dugme za odabir Duzine*/
+.LengthBTN
+{
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:left; 
+}
+.LengthBTN:hover
+{
+    background-color: #ddd;
+}
+
+/*Skrivanje Inputa po Default-u*/
+.Weight
+{
+    visibility: hidden;
+    display: block;
+}
+.Length
+{
+    visibility: hidden;
+    display:block;
+}
+
+/*Input*/
+input[type="number"]
+{
+    border:1px solid white;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    width: 200px;
+    transition: 0.20s;
+    outline: none;
+}
+input[type="number"]:focus
+{
+    width:300px;
+    border-color:#3498DB;
+}
+
+
+/*Kartice za Output Tezine*/
+.cardM
+{
+    background-color:#3498DB;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    margin:5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.cardK
+{
+    background-color:#3498DB;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    margin:5px;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+.cardP
+{
+    background-color:#3498DB;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    margin:5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.cardO
+{
+    background-color:#3498DB;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    margin:5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/*Kartice za Output Duzine*/
+.cardMm
+{
+    background-color:#3498DB;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    margin:5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.cardCm
+{
+    background-color:#3498DB;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    margin:5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.cardKm
+{
+    background-color:#3498DB;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    margin:5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.cardIn
+{
+    background-color:#3498DB;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    margin:5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/*Svojstvo Prikaza (Koristi se u JS-U)*/
+.show 
+{
+    display:block;
+}
+
+
+/*
+=====================
+-  Media Queries 
+=====================
+*/
+
+@media only screen and (max-width: 768px)
+{
+    .converter-body
+    {
+        left: 25%;
+        right: 25%;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    .body
+    {
+        padding: 0;
+    }
+    .converter-body
+    {
+        left:8%;
+        right: 5%;
+    }
+}

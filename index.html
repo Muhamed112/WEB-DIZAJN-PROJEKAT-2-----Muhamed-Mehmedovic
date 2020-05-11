@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="MyScript.js"></script>
+        
+        <title>Converter App</title>
+    </head>
+    <body>
+        <!-- Tijelo Aplikacije -->
+        <div class="converter-body">
+            <h1 class="converer-title">Weight and Length <br> Converter</h1>
+            
+            <!-- Dugme i Dropdown Meni -->    
+            <div class="converter-dropdown">
+                <button onclick ="ButtonFunction()" class="dropBTN">Choose the unit you want: </button>
+                <div id = "ButtonDropdown" class="dropdown-content">
+                    <button onclick = "WeightFunction()" class = "WeightBTN"> Weight </button>
+                    <button onclick = "LengthFunction()" class = "LengthBTN"> Length </button>
+                </div>
+            </div>
+            
+            <!-- Input Forme za Tezinu/Duzinu -->   
+            <form>
+                <div id="WeightForm" class="Weight">
+                     <input id="GramInput" type = "number" placeholder="Enter grams...">
+                </div>
+                <div id="LengthForm" class="Length">
+                    <input id="MeterInput" type="number" placeholder="Enter meters...">
+                </div>
+            </form>
+            
+            <!-- Output Kartice za Tezinu -->   
+            <div id="WeightOutput">
+                <div class="cardM">
+                    <div class="cardBlock">
+                        <h4>Miligrams:</h4>
+                        <div id="MgOutput"></div>
+                    </div>
+                </div>
+
+                <div class="cardK">
+                    <div class="cardBlock">
+                        <h4>Kilograms:</h4>
+                        <div id="KgOutput"></div>
+                    </div>
+                </div>
+
+                <div class="cardP">
+                    <div class="cardBlock">
+                        <h4>Pounds:</h4>
+                        <div id="IbsOutput"></div>
+                    </div>
+                </div>
+
+                <div class="cardO">
+                    <div class="cardBlock">
+                        <h4>Ounces:</h4>
+                        <div id="OzOutput"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Output Kartice za Duzinu -->   
+            <div id="LengthOutput">
+                <div class="cardMm">
+                    <div class="cardBlock">
+                        <h4>Milimeters:</h4>
+                        <div id="MmOutput"></div>
+                    </div>
+                </div>
+
+                <div class="cardCm">
+                    <div class="cardBlock">
+                        <h4>Centimeters:</h4>
+                        <div id="CmOutput"></div>
+                    </div>
+                </div>
+
+                <div class="cardKm">
+                    <div class="cardBlock">
+                        <h4>Kilometers:</h4>
+                        <div id="KmOutput"></div>
+                    </div>
+                </div>
+
+                <div class="cardIn">
+                    <div class="cardBlock">
+                        <h4>Inches:</h4>
+                        <div id="InOutput"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
